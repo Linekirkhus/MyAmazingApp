@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyAmazingApp</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="welcome_to_unwind">Welcome to UnWind</string>
+    <string name="update_password">Update Password</string>
+</resources>
