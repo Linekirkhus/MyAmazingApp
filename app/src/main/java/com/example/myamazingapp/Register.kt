@@ -11,12 +11,11 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-
-class Register : AppCompatActivity() {
+class Register : AppCompatActivity(){
 
     private lateinit var auth: FirebaseAuth
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
         auth = Firebase.auth
@@ -31,7 +30,6 @@ class Register : AppCompatActivity() {
         loginLink.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
-
     }
 
     private fun signUpUser() {
@@ -39,8 +37,7 @@ class Register : AppCompatActivity() {
         val tv_username = findViewById<TextView>(R.id.email)
         val tv_password = findViewById<TextView>(R.id.password)
         //val tv_phone = findViewById<TextView>(R.id.phone)
-
-
+        
         if (tv_fullname.text.toString().isEmpty()) {
             tv_fullname.error = "Please Name"
             tv_fullname.requestFocus()
@@ -65,14 +62,12 @@ class Register : AppCompatActivity() {
             tv_password.requestFocus()
             return
         }
-
 /*
         if (tv_phone.text.toString().isEmpty()) {
             tv_phone.error = "Please enter Email"
             tv_phone.requestFocus()
             return
         }
-
  */
 
         auth.createUserWithEmailAndPassword(
@@ -89,12 +84,12 @@ class Register : AppCompatActivity() {
                                 finish()
                             }
                         }
-                } else {
-                    Toast.makeText(
-                        baseContext, "Registration failed. Please try again",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+             } else {
+                 Toast.makeText(
+                     baseContext, "Registration failed. Please try again",
+                     Toast.LENGTH_SHORT
+                ).show()
             }
+        }
     }
 }

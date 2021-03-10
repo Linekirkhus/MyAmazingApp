@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/layout_user_settings"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="161dp"
         android:layout_centerVertical="true"
         android:orientation="vertical">
 
@@ -33,22 +33,51 @@
             android:layout_height="wrap_content"
             android:hint="Confirm Password" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@+id/layout_user_settings"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="158dp"
+        android:baselineAligned="true"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/btn_save_password"
-            android:layout_width="162dp"
+            android:layout_width="158dp"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_sml_3464"
-            android:text="Update Password"
-            android:textColor="#FFFFFF" />
+            android:clickable="true"
+            android:text="Update"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_cancel"
-            android:layout_width="162dp"
-            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="287dp"
+            android:layout_marginBottom="212dp"
             android:background="@drawable/btn_sml_3464"
+            android:clickable="true"
             android:text="Cancel"
-            android:textColor="#FFFFFF" />
-
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
     </LinearLayout>
 
 </RelativeLayout>

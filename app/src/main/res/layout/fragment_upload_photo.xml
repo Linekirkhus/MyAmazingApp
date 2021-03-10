@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPhotoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/upload_photo_fragment_layout"
+        android:layout_width = "match_parent"
+        android:layout_height = "414dp"
+        >
+
+        <!--  <TableRow
+            android:id="@+id/update_photo_button_group"
+            android:layout_width="411dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="168dp"
+            android:gravity="fill"
+            android:hapticFeedbackEnabled="false"
+            android:orientation="horizontal"
+            android:padding="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_profile_image"
+            app:layout_constraintVertical_bias="0.21">
+            -->
+
+        <TextView
+            android:id = "@+id/update_profile_photo_heading"
+            android:layout_width = "339dp"
+            android:layout_height = "63dp"
+            android:layout_marginStart = "10dp"
+            android:layout_marginEnd = "10dp"
+            android:layout_marginBottom = "16dp"
+            android:fontFamily = "@font/playfair_display_black_italic"
+            android:padding = "10sp"
+            android:text = "Update Profile Photo"
+            android:textAllCaps = "false"
+            android:textSize = "30sp"
+            android:textStyle = "bold"
+            app:layout_constraintBottom_toTopOf = "@+id/update_profile_image"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = "1.0"
+            />
+
+        <ImageView
+            android:id = "@+id/update_profile_image"
+            android:layout_width = "176dp"
+            android:layout_height = "202dp"
+            android:contentDescription = "TODO"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintHorizontal_bias = "0.497"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = "0.653"
+            app:srcCompat = "@drawable/userphoto_1"
+            />
+
+        <Button
+            android:id = "@+id/btn_upp_fragment_take_new_photo"
+            android:layout_width = "130dp"
+            android:layout_height = "50dp"
+            android:fontFamily = "@font/montserrat"
+            android:text = "@string/camera"
+            android:textSize = "15sp"
+            app:icon = "@drawable/ic_baseline_add_a_photo_24"
+            app:iconGravity = "textStart"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintHorizontal_bias = "0.498"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/update_profile_image"
+            app:layout_constraintVertical_bias = "0.448"
+            />
+
+        <Button
+            android:id = "@+id/btn_upp_fragment_save_update"
+            android:layout_width = "130dp"
+            android:layout_height = "50dp"
+            android:fontFamily = "@font/montserrat"
+            android:text = "Save"
+            android:textSize = "15sp"
+            app:icon = "@drawable/ic_baseline_check_24"
+            app:iconGravity = "textStart"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintHorizontal_bias = "0.909"
+            app:layout_constraintStart_toEndOf = "@+id/btn_upp_fragment_take_new_photo"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = "0.957"
+            />
+
+        <Button
+            android:id = "@+id/btn_upp_fragment_select_photo"
+            android:layout_width = "130dp"
+            android:layout_height = "50dp"
+            android:fontFamily = "@font/montserrat"
+            android:text = "select"
+            android:textSize = "15sp"
+            app:icon = "@drawable/ic_baseline_add_photo_alternate_24"
+            app:iconGravity = "textStart"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toStartOf = "@+id/btn_upp_fragment_take_new_photo"
+            app:layout_constraintHorizontal_bias = "0.0"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = "0.957"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout >
+</FrameLayout>

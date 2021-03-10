@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                                                   xmlns:app = "http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width = "match_parent"
+                                                   android:layout_height = "match_parent"
+    >
+
+    <TextView
+        android:id = "@+id/update_1"
+        android:layout_width = "339dp"
+        android:layout_height = "63dp"
+        android:layout_marginStart = "10dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "10dp"
+        android:fontFamily = "@font/playfair_display_black"
+        android:padding = "10sp"
+        android:text = "Update Account Settings"
+        android:textAlignment = "center"
+        android:textAllCaps = "false"
+        android:textSize = "30sp"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toTopOf = "@+id/update_profile_photo_1"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintVertical_bias = "1.0"
+        />
+
+    <ImageView
+        android:id = "@+id/update_profile_photo_1"
+        android:layout_width = "154dp"
+        android:layout_height = "169dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.498"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintVertical_bias = "0.37"
+        app:srcCompat = "@drawable/userphoto_1"
+        />
+
+    <TableRow
+        android:id = "@+id/update_photo_button_group_1"
+        android:layout_width = "394dp"
+        android:layout_height = "74dp"
+        android:layout_marginStart = "40dp"
+        android:layout_marginTop = "16dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "1.0"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/update_profile_photo_1"
+        app:layout_constraintVertical_bias = "0.075"
+        >
+
+        <Button
+            android:id = "@+id/btn_update_profile_photo_select_1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "5sp"
+            android:layout_marginStart = "10sp"
+            android:text = "Select File"
+            android:textSize = "18sp"
+            />
+
+        <Button
+            android:id = "@+id/btn_update_profile_photo_delete_1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "5sp"
+            android:text = "Delete File"
+            android:textSize = "18sp"
+            />
+
+        <Button
+            android:id = "@+id/btn_update_profile_photo_cancel_1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "5sp"
+            android:layout_marginRight = "10sp"
+            android:text = "Create new"
+            android:textSize = "18sp"
+            />
+    </TableRow >
+</androidx.constraintlayout.widget.ConstraintLayout >

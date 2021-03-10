@@ -11,7 +11,6 @@ import kotlinx.android.synthetic.main.activity_user_settings.*
 
 class UserSettings : AppCompatActivity() {
 
-
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,7 +56,6 @@ class UserSettings : AppCompatActivity() {
                                 )
                                     .show()
 
-
                                 user!!.updatePassword(et_new_password.text.toString())
                                     ?.addOnCompleteListener { task ->
                                         if (task.isSuccessful) {
@@ -87,8 +85,6 @@ class UserSettings : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT)
                 .show()
-
         }
-
     }
 }
